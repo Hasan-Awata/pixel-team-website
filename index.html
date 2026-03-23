@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية | فريق بكسل التعليمي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ بكسل</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="join.html">انضم إلينا</a></li>
+            </ul>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="فتح القائمة">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                    <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <div class="sparkle-logo">✦</div> 
+            <h1>فريق بكسل التعليمي</h1>
+            <p class="subtitle">Pixel Educational Team</p>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <section class="card fade-in">
+            <h2>خدماتنا الأساسية</h2>
+            <p style="margin-bottom: 2rem; color: #718096;">نرافقك خطوة بخطوة نحو التفوق من خلال مجموعة متكاملة من الخدمات التعليمية:</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3>فيديوهات تعليمية</h3>
+                    <p>شروحات مرئية شاملة ومبسطة لمنهاج البكالوريا العلمي عبر قناتنا على اليوتيوب.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>ملفات ونوطات دراسية</h3>
+                    <p>ملخصات، ونماذج امتحانية، وبنوك أسئلة مصممة بدقة لمساعدتك على التفوق والمراجعة.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>مناقشات علمية</h3>
+                    <p>غرف تفاعلية على منصة التلغرام للإجابة عن كافة استفساراتكم ومناقشة الأفكار مع المدرّسين.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>استشارات ونصائح</h3>
+                    <p>دعم نفسي وإرشادات دراسية متواصلة لمساعدتك في تنظيم وقتك وتجاوز ضغوط الامتحان.</p>
+                </div>
+            </div>
+           
+            <hr style="border: 0; border-top: 1px solid var(--pixel-platinum); margin: 3rem 0;">
+
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="price" style="font-size: 1.8rem;">الخدمات المجانية</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✔</span> شروحات لكامل المنهاج على يوتيوب</li>
+                        <li><span class="check">✔</span> الانضمام لمجموعات التلغرام التفاعلية</li>
+                        <li><span class="check">✔</span> تحميل وقراءة النوطات بصيغة PDF</li>
+                        <li class="disabled"><span class="cross">✖</span> متابعة خاصة للطلاب في مجموعات مغلقة</li>
+                        <li class="disabled"><span class="cross">✖</span> الحصول على النوطات والملفات ورقياً</li>
+                        <li class="disabled"><span class="cross">✖</span> دورات مكثفة ومراجعات خاصة</li>
+                        <li class="disabled"><span class="cross">✖</span> نماذج امتحانية حصرية مع سلالم التصحيح</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="price" style="font-size: 1.8rem;">الخدمات غير المجانية</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✔</span> متابعة خاصة للطلاب في مجموعات مغلقة</li>
+                        <li><span class="check">✔</span> الحصول على النوطات والملفات ورقياً</li>
+                        <li><span class="check">✔</span> دورات مكثفة ومراجعات خاصة</li>
+                        <li><span class="check">✔</span> نماذج امتحانية حصرية مع سلالم التصحيح</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="telegram-cta fade-in">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+
+            <div class="cta-content">
+                <div class="cta-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a11.96 11.96 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.667 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                </div>
+                <h2>أكبر تجمع لطلاب البكالوريا في سوريا ✦</h2>
+                <p>أكثر من 30 ألف طالب بانتظارك! انضم الآن للحصول على النوطات، الملفات، وحضور المناقشات المباشرة يومياً.</p>
+                <a href="https://t.me/addlist/AEJ5Lyhbq79jNGFk" class="telegram-btn" target="_blank">انضم إلى قنوات Pixel 🚀</a>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>المواد الدراسية</h2>
+            <div class="grid-team">            
+                
+                <a href="https://t.me/Pixel_English" target="_blank" class="team-member" style="--hover-bg: #663399; --text-hover: #FFFFFF;">
+                    <h3>اللغة الإنكليزية</h3>
+                    <p>حسن عواطه</p>
+                </a>
+                
+                <a href="https://t.me/pixel_math" target="_blank" class="team-member" style="--hover-bg: #FFD700; --text-hover: #2A2A2A;">
+                    <h3>الرياضيات</h3>
+                    <p>ضياء قره بللي</p>
+                </a>
+                
+                <a href="https://t.me/pixel_team_of_Arabic" target="_blank" class="team-member" style="--hover-bg: #E5E4E2; --text-hover: #2A2A2A;">
+                    <h3>اللغة العربية</h3>
+                    <p>معاذ عبد الرحمن</p>
+                </a>
+                
+                <a href="https://t.me/Pixel_Physics" target="_blank" class="team-member" style="--hover-bg: #00AAEE; --text-hover: #2A2A2A;">
+                    <h3>الفيزياء</h3>
+                    <p>مايا البكور</p>
+                </a>
+
+                <a href="https://t.me/pixel_Chemistry" target="_blank" class="team-member" style="--hover-bg: #4BCEEB; --text-hover: #2A2A2A;">
+                    <h3>الكيمياء</h3>
+                    <p>إياس قدوري</p>
+                </a>
+
+                <a href="https://t.me/Pixel_French" target="_blank" class="team-member" style="--hover-bg: #EFBBCC; --text-hover: #2A2A2A;">
+                    <h3>اللغة الفرنسية</h3>
+                    <p>رامي حبيب</p>
+                </a>
+                
+                <a href="https://t.me/science_team_2024" target="_blank" class="team-member" style="--hover-bg: #2E8B57; --text-hover: #FFFFFF;">
+                    <h3>العلوم</h3>
+                    <p>أمير الحسين</p>
+                </a>
+
+                <a href="https://t.me/Pixel_ISLamia" target="_blank" class="team-member" style="--hover-bg: #9F4B50; --text-hover: #FFFFFF;">
+                    <h3>التربية الدينية</h3>
+                    <p>طارق صواب</p>
+                </a>
+            </div>
+        </section>
+        
+        <section class="card fade-in">
+            <h2>المبادرات الفرعية</h2>
+            <div class="grid-2">
+                
+                <a href="https://t.me/Pixel_Team_SAB" target="_blank" class="initiative-card" style="text-decoration: none; color: inherit;">
+                    <h3>مبادرة إصلاح 💚</h3>
+                    <p>قناة مختصة بالنصائح التوعوية والاجتماعية بعيداً عن الدراسة والمحتوى العلمي</p>
+                </a>
+
+                <a href="https://t.me/cYfdbFEoGrQ4YzMy" target="_blank" class="initiative-card" style="text-decoration: none; color: inherit;">
+                    <h3>نفحات قرآنية 📿</h3>
+                    <p>مجموعة مخصصة للختمات القرآنية الجماعية بين جميع الأعضاء</p>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 فريق بكسل التعليمي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <div id="menu-overlay" class="menu-overlay"></div>
+    <nav id="side-menu" class="side-menu">
+        <button id="close-menu" class="close-menu" aria-label="إغلاق القائمة">&times;</button>
+        <div class="side-menu-content">
+            <h2 class="menu-title">فريق بكسل ✦</h2>
+            <ul class="menu-links-side">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+            </ul>
+            <div class="join-us-box">
+                <h3>انضم إلينا</h3>
+                <p>هل تمتلك الشغف للتدريس ومساعدة الطلاب؟ كن جزءاً من عائلتنا وساهم في بناء جيل متفوق.</p>
+                <a href="join.html" class="join-btn">تطوع معنا الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

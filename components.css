@@ -1,0 +1,55 @@
+/* components.css */
+.card {
+    background: var(--pixel-white);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-right: 5px solid var(--pixel-dark);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(42, 42, 42, 0.15);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: var(--pixel-yellow);
+    color: var(--pixel-dark);
+    border: 2px solid var(--pixel-yellow);
+}
+
+.primary-btn:hover {
+    background-color: transparent;
+    border-color: var(--pixel-dark);
+    transform: translateY(-3px);
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: var(--pixel-dark);
+    border: 2px solid var(--pixel-platinum);
+}
+
+.outline-btn:hover {
+    border-color: var(--pixel-dark);
+    background-color: var(--pixel-dark);
+    color: var(--pixel-white);
+    transform: translateY(-3px);
+}
+
