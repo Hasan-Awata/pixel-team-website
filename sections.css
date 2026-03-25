@@ -365,6 +365,75 @@
     }
 }
 
+/* =========================================
+   UNIFIED PRICING BOX STYLES
+========================================= */
+.single-pricing-box {
+    padding: 3rem;
+}
+
+.unified-features li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0 !important;
+}
+
+.unified-features li:last-child {
+    border-bottom: none;
+}
+
+.feature-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.check.star {
+    color: var(--pixel-yellow);
+    font-size: 1.4rem;
+}
+
+/* Badges (علامات التصنيف) */
+.badge {
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.badge-free {
+    background-color: #e6ffed;
+    color: #2ea043;
+    border: 1px solid rgba(46, 160, 67, 0.2);
+}
+
+.badge-paid {
+    background-color: #fff8c5;
+    color: #d4a72c;
+    border: 1px solid rgba(212, 167, 44, 0.3);
+}
+
+@media (max-width: 600px) {
+    .single-pricing-box {
+        padding: 2rem 1.5rem;
+    }
+    .unified-features li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .badge {
+        align-self: flex-start;
+        margin-right: 30px; /* للمحاذاة مع النص تحت الأيقونة */
+    }
+}
+
 /* Social Media Section */
 .social-grid {
     display: flex;
@@ -539,4 +608,39 @@ footer {
     transform: translate(-4px, -4px);
     box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.15);
     background: var(--pixel-white);
+}
+
+/* =========================================
+   VOLUNTEER PERKS (join.html)
+========================================= */
+.perks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.perk-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px dashed rgba(251, 192, 45, 0.3); /* Subtle yellow dashed border */
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.perk-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--pixel-yellow); /* Lights up on hover */
+}
+
+.perk-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: float-icon 3s ease-in-out infinite;
+}
+
+/* Stagger the animation so the icons don't all float up and down at the exact same time */
+.perk-box:nth-child(even) .perk-icon {
+    animation-delay: 1.5s;
 }
